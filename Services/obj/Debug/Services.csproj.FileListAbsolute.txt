@@ -1,0 +1,11 @@
+D:\2026 CIBERTEC MARZO\POOII\Skart\Services\bin\Debug\Services.dll
+D:\2026 CIBERTEC MARZO\POOII\Skart\Services\bin\Debug\Services.pdb
+D:\2026 CIBERTEC MARZO\POOII\Skart\Services\bin\Debug\DAL.dll
+D:\2026 CIBERTEC MARZO\POOII\Skart\Services\bin\Debug\Entities.dll
+D:\2026 CIBERTEC MARZO\POOII\Skart\Services\bin\Debug\DAL.pdb
+D:\2026 CIBERTEC MARZO\POOII\Skart\Services\bin\Debug\Entities.pdb
+D:\2026 CIBERTEC MARZO\POOII\Skart\Services\obj\Debug\Services.csproj.AssemblyReference.cache
+D:\2026 CIBERTEC MARZO\POOII\Skart\Services\obj\Debug\Services.csproj.CoreCompileInputs.cache
+D:\2026 CIBERTEC MARZO\POOII\Skart\Services\obj\Debug\Services.csproj.Up2Date
+D:\2026 CIBERTEC MARZO\POOII\Skart\Services\obj\Debug\Services.dll
+D:\2026 CIBERTEC MARZO\POOII\Skart\Services\obj\Debug\Services.pdb

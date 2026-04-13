@@ -1,0 +1,48 @@
+﻿.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: var(--bg-navbar);
+    color: var(--text-navbar);
+    padding: 0.5rem;
+    z-index: 1000;
+}
+
+.navbar-grid {
+    display: grid;
+    grid-template-columns: auto auto 1fr auto; /* Botón, Logo, Links, Acciones */
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-logo a {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    margin-left: 0.5rem;
+}
+
+.navbar-links {
+    display: flex;
+    justify-content: center; /* Centra las opciones */
+    gap: 1rem;
+}
+
+    .navbar-links a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+.navbar-actions {
+    display: flex;
+    justify-content: flex-end; /* Alinea a la derecha */
+    gap: 1rem;
+}
+
+    .navbar-actions a, .navbar-actions button {
+        text-decoration: none;
+        color: inherit;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }

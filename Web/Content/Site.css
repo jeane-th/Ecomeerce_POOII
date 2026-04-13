@@ -1,0 +1,50 @@
+﻿:root {
+    --bg-navbar: #222;
+    --text-navbar: #fff;
+    --bg-sidebar: #333;
+    --text-sidebar: #fff;
+    --bg-footer: #222;
+    --text-footer: #fff;
+    --bg-content: #111;
+    --text-content: #eee;
+}
+
+.light-theme {
+    --bg-navbar: #f0f0f0;
+    --text-navbar: #000;
+    --bg-sidebar: #fff;
+    --text-sidebar: #000;
+    --bg-footer: #f0f0f0;
+    --text-footer: #000;
+    --bg-content: #fff;
+    --text-content: #000;
+}
+
+.dark-theme {
+    --bg-navbar: #222;
+    --text-navbar: #fff;
+    --bg-sidebar: #333;
+    --text-sidebar: #fff;
+    --bg-footer: #222;
+    --text-footer: #fff;
+    --bg-content: #111;
+    --text-content: #eee;
+}
+
+body {
+    margin: 0;
+    background: var(--bg-content);
+    color: var(--text-content);
+    font-family: Arial, sans-serif;
+    padding-bottom: 60px;
+}
+
+.content {
+    margin-top: 60px;
+    margin-left: 220px;
+    padding: 1rem;
+}
+
+.sidebar.collapsed ~ .content {
+    margin-left: 60px;
+}

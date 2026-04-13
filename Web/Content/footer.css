@@ -1,0 +1,17 @@
+﻿.footer {
+    position: fixed; /* Fija el footer */
+    bottom: 0; /* Lo coloca al pie */
+    left: 0; /* Alineado al borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho */
+    background: var(--bg-footer);
+    color: var(--text-footer);
+    text-align: center;
+    padding: 1rem;
+    z-index: 999; /* Se asegura que quede encima */
+}
+
+    .footer nav a {
+        margin: 0 0.5rem;
+        text-decoration: none;
+        color: inherit;
+    }

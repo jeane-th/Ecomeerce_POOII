@@ -1,0 +1,88 @@
+﻿.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background: var(--bg-sidebar);
+    color: var(--text-sidebar);
+    transition: width 0.3s;
+    overflow-y: auto;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    box-shadow: 2px 0 6px rgba(0,0,0,0.3); /* sombra moderna */
+    border-radius: 0 8px 8px 0; /* borde redondeado */
+}
+
+    .sidebar.collapsed {
+        width: 60px;
+    }
+
+        .sidebar.collapsed .label {
+            display: none; /* Oculta textos, deja solo iconos */
+        }
+
+    /* Quitamos viñetas y márgenes */
+    .sidebar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+        .sidebar ul li {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+            .sidebar ul li a {
+                text-decoration: none;
+                color: inherit;
+                display: flex;
+                align-items: center;
+                font-size: 0.95rem;
+                font-weight: 500;
+                transition: background 0.2s, color 0.2s;
+            }
+
+                /* Hover con buena apariencia */
+                .sidebar ul li a:hover {
+                    background: rgba(255,255,255,0.1);
+                    color: #00aced; /* azul moderno */
+                    border-radius: 4px;
+                }
+
+/* Submenús */
+.submenu {
+    padding-left: 1.5rem;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+
+/* Tooltip solo cuando está colapsada */
+.sidebar.collapsed a[title] {
+    position: relative;
+}
+
+    .sidebar.collapsed a[title]:hover::after {
+        content: attr(title);
+        position: absolute;
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0,0,0,0.8);
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 4px;
+        white-space: nowrap;
+        margin-left: 8px;
+        font-size: 0.8rem;
+        z-index: 2000;
+        opacity: 0;
+        animation: fadeIn 0.3s forwards;
+    }
+
+/* Animación suave */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
